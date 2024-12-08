@@ -1,0 +1,18 @@
+[package]
+name = "qps_client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+structopt = "0.3.26"
+# hyper = "0.14"
+# tokio = { version = "1", features = ["full"] }
+crossbeam-channel = "0.5"
+
+[[bin]]
+name = "tcp_server"
+path = "src/tcp_about/server.rs"
+
+# [[bin]]
+# name = "tcp_client"
+# path = "src/tcp_about/client.rs"
